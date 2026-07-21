@@ -98,7 +98,7 @@ class GimbalSystem:
 
   def set_target_angles(self, pan, tilt):
     """모터에 목표 각도 명령 전달"""
-    self.pan_angle = max(-1.57, min(1.57, pan))
+    # self.pan_angle = max(-1.57, min(1.57, pan))
     self.tilt_angle = max(-0.78, min(0.78, tilt))
 
     p.setJointMotorControl2(
