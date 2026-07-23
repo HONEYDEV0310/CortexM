@@ -35,7 +35,8 @@ print(" [Space Bar]       : PID 자동 추적 모드 토글 (ON / OFF)")
 
 # 2. 클래스 인스턴스화
 gimbal = GimbalSystem()
-tracker = VisionTracker(kp=0.002, ki=0.0, kd=0.0001)
+#tracker = VisionTracker(kp=0.002, ki=0.0, kd=0.0001)
+tracker = VisionTracker(kp=0.001, ki=0.0, kd=0.0002)
 
 # 제어 상태 변수
 auto_tracking = False  # 스페이스바로 켜고 끌 수 있는 자동 추적 모드 플래그
